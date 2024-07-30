@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.2.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Design Your Website</h2>
+    <p>Don't forget like, comment, share and subscribe</p>
+    <div class="buttons">
+      <a href="#">WATCH</a>
+      <a href="#">SUBSCRIBE</a>
+  </div>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <div class="photo-container img">
+      <img src="topi.jpg" align="right" alt="Deskripsi Foto">
+    </div>
+    <p><br>
+      Nama  : Rismawati <br>
+      Nim   : 16323040 <br>
+      Kelas          : 1B <br>
+      Saat ini saya sedang berkuliah di politeknik negeri fakfak!!!
+    </p>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+   
+    <h3>Audio</h3>
+    <audio controls src="BTS - Jungkook 'Still With You' [Easy Lyrics].mp3"></audio>
+    <h3>Video</h3>
+    <video controls autoplay src="neng asa.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Nama saya Rismawati, bisa di panggil Mikasa. Saya anak pertam dari 3 bersaudara, saya lulusan dari SMA Negri 2
+      Fakfak. Hobi saya bermain Free Fire, menonton anime, dan membaca webtoon. Anime faforitku yaitu One Piece, dam Attack On Titan.
+       Saya juga seorang Kpop-ers, saya seorang Army, seorang Blink, and seorang Montiez. Biasku di BTS adalah Kim Seokjin,
+       kalau di BlackPink biasku yaitu Kim Jisoo, sedangkan Di BabyMonster biasku yaitu Enami Asa.<br></p>
+    
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Dikabarkan pada jumat 26 juli 2024, dua orang mahasiswa Polinef melakukan pelanggaran saat mengendarai sepeda motor.
+      Alhasil sepeda motor mereka di sita oleh pihak kepolisian.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; Uchiha D. Rhiis</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
